@@ -17,7 +17,7 @@
             <td>{{producto.productName}}</td>
             <td>{{producto.price}}</td>
             <td><button class="btn btn-primary" routerLink="/detalle/{{producto.id}}">Ver</button></td>
-            <td *ngIf="user === 'admin'"><button class="btn btn-danger" routerLink="/actualizar/{{producto.id}}">Editar</button></td>
+            <td *ngIf="user === 'admin'"><button class="btn btn-warning" routerLink="/actualizar/{{producto.id}}">Editar</button></td>
             <td *ngIf="user === 'admin'"><button class="btn btn-danger" (click)="onDelete(producto.id)">Eliminar</button></td>
             
           </tr>
