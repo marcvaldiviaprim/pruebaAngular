@@ -3,6 +3,9 @@ import { Router } from '@angular/router';
 import { Producto } from '../models/producto';
 import { ProductoService } from '../services/producto.service';
 
+
+
+
 @Component({
   selector: 'app-lista-producto',
   templateUrl: './lista-producto.component.html',

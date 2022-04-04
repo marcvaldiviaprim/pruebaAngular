@@ -15,7 +15,8 @@ import { interceptorProvider } from './services/producto-interceptor.service';
 import { UserComponent } from './user/user.component';
 import { AdminComponent } from './admin/admin.component';
 import { RegistroComponent } from './auth/registro/registro.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -28,13 +29,23 @@ import { RegistroComponent } from './auth/registro/registro.component';
     HomeComponent,
     UserComponent,
     AdminComponent,
-    RegistroComponent,
+    RegistroComponent
+    
+
+
   ],
   imports: [
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    BrowserModule, 
+    FormsModule, 
+     BrowserAnimationsModule, 
+    MatButtonModule
+    
+    
   ],
   providers: [interceptorProvider],
   bootstrap: [AppComponent]
